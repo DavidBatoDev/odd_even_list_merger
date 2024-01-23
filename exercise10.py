@@ -8,4 +8,17 @@ list2 = [40, 45, 60, 75, 90]
 # loop trough the second list to get all the even numbers
 # return the modified new list
 
+def combine_list(lst1, lst2):
+    result = []
+    for num in lst1:
+        if num % 2 != 0:
+            result.append(num)
+    
+    for num in lst2:
+        if num % 2 == 0:
+            result.append(num)
 
+    return result
+
+
+print(combine_list(lst1=list1, lst2=list2))
